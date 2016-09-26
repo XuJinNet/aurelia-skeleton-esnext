@@ -1,0 +1,16 @@
+node_modules
+jspm_packages
+bower_components
+.idea
+*.iml
+.DS_STORE
+/dist
+build/reports
+coverage
+test/e2e/dist
+/export
+
+# Logs
+logs
+*.log
+npm-debug.log*
