@@ -1,5 +1,7 @@
 //import {computedFrom} from 'aurelia-framework';
 
+import $ from 'jquery';
+
 export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';
   firstName = 'John';
@@ -18,6 +20,10 @@ export class Welcome {
   submit() {
     this.previousValue = this.fullName;
     alert(`Welcome, ${this.fullName}!`);
+  }
+
+  attached() {
+    $('section').append('<div id="jquery-test">Using jquery for test</div>');
   }
 
   canDeactivate() {
